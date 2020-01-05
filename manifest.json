@@ -1,0 +1,13 @@
+  {
+    "name": "Spoke Plus",
+    "version": "1.0",
+    "description": "add features to bernie spoke",
+    "manifest_version": 2,
+  "permissions": ["tabs", "https://text.berniesanders.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://text.berniesanders.com/*"],
+      "js": ["mousetrap.js", "spokeplus.js"]
+    }
+  ]
+  }
